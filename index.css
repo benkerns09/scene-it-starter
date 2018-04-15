@@ -1,5 +1,5 @@
 body {
-	background-color: #B2E9FD;
+	background-color: black;
 }
 
 .header h2 {
@@ -14,3 +14,12 @@ body {
 	margin-top: 20px;
 }
 
+.movie {
+	background-color: white;
+}
+
+.card {
+	float: left;
+	margin: 10px;
+	width: 250px;
+}

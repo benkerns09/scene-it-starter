@@ -1,4 +1,4 @@
-var movieData = [
+var movieData = [//this can be passed in as movvieArray in the renderMovies function. Current Movie will then be one of these objects. If we wanted to access the movie's title, we would say currentMovie.title
 	{
 		Title: "The Dark Knight",
 		Year: "2008",
