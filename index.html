@@ -2,48 +2,48 @@
 <html>
 <head>
 	<title>Scene It</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-	<script src="https://code.jquery.com/jquery-3.2.1.min.js" ></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
-	<script src="data.js"></script>
-	<script src="index.js"></script>
-	<link rel="stylesheet" href="index.css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous"><!--This is the bootstrap CDN. Get this from bootstrap site-->
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" ></script><!--jQuery from bootstrap site-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script><!--Popper.JS from bootstrap site-->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script><!--JS from bootstrap site-->
+	<script src="data.js"></script><!--To pull from data.js-->
+	<script src="index.js"></script><!--To pull from index.js-->
+	<link rel="stylesheet" href="index.css" /><!--To pull from css file-->
 </head>
 <body>
-	<div class="container">
-		<div class="row">
-			<div class="col-12 header text-center">
-				<h2 class="display-2">Scene It</h2>
-				<p>Search for movies you want to watch.</p>
-				<p>Save them to your list</p>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-12 search">
+	<div class="container"><!--Containers most basic in bootstrap when using default grid system. Requires a "containing element". You can either use "container" or "container-fluid". Rows must be put inside of the contianer. .container-fluid if full width. reg container is fixed width. SOrt of holds everything together-->
+		<div class="row"><!--Rows are used to create horizontal groups of columns. This column has the main stuff at top...title and text, etc.-->
+			<div class="col-12 header text-center"><!--This is a predefined grid class that makes it easy to make a quick layout-->
+				<h2 class="display-2">Scene It</h2><!--this is a bootstrap heading-->
+				<p>Search for movies you want to watch.</p><!--Regular p tags here that go below each other-->
+				<p>Save them to your list</p><!--Because it is a p tag they will go below each other-->
+			</div><!--Closing out the predefined header-->
+		</div><!--Closing out the first row, which is the title stuff. NOw we are more to the "meat" of the page-->
+		<div class="row"><!--Starting the next row, this is just the searchbar-->
+			<div class="col-12 search"><!--Searchbar from bootstrap.-->
 
-				<form id="search-form">
-					<div class="input-group input-group-lg">
-				      <input class="form-control search-bar" placeholder="Search for a movie...">
-				      <span class="input-group-btn">
-				        <button class="btn btn-primary" type="submit">Search</button>
-				      </span>
-				    </div>
-				</form>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-12 results">
+				<form id="search-form"><!--Form from Boostrap. Giving the form an ID-->
+					<div class="input-group input-group-lg"><!--Just another bootstrap specification for the form we want-->
+				      <input class="form-control search-bar" placeholder="Search for a movie..."><!--The placeholder includes what the text will say before we start searching-->
+				      <span class="input-group-btn"><!--Adds the button for the searchBar-->
+				        <button class="btn btn-primary" type="submit">Search</button><!--Specifications for the button-->
+				      </span><!--Closes the span class that was a specification for the button. Meaning the button is going to be horizontal to the searchbar-->
+				    </div><!--CLoses out the input div-->
+				</form><!--closes out the form-->
+			</div><!--Closes out the searchbar row-->
+		</div><!--Second row is not completely closed-->
+		<div class="row"><!--Starting the third row. THis is going to include our movies-->
+			<div class="col-12 results"><!--This has the results of the search-->
 				<div class="movies-container"><!--This class should contain all of the individual movie renderings-->
 					<!-- MOVIES SHOW UP HERE! -->
-				</div>
-				
-			</div>
-		</div>
+				</div><!--CLosing out the movie renderings-->
 
-	</div>
+			</div><!--Closing out the results of the search div-->
+		</div><!--Closing out the last row(movies)-->
+
+	</div><!--Closing out the main container that allows the bootsrapping-->
 
 
 	
-</body>
-</html>
+</body><!--Closing body tag-->
+</html><!--All done-->

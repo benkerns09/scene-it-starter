@@ -1,24 +1,24 @@
 body {
-	background-color: black;
+	background-color: black;/*changes the background color to black*/
 }
 
 .header h2 {
-	color: #DC4247;
+	color: #DC4247;/*main title*/
 }
 
 .header p {
-	color: #50524F;
+	color: #50524F;/*css for the movie titles. This is found in the renderMovies function*/
 }
 
 .results {
-	margin-top: 20px;
+	margin-top: 20px;/*margin around the movie container*/
 }
 
 .movie {
-	background-color: white;
+	background-color: white;/*so every movie type has a background of white*/
 }
 
-.card {
+.card {/*we have these movies on "cards" this is our css for the cards. Our cards are built into the renderMovies function*/
 	float: left;
 	margin: 10px;
 	width: 250px;
