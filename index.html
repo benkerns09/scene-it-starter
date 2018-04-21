@@ -17,8 +17,11 @@
 				<h2 class="display-2">Scene It</h2><!--this is a bootstrap heading-->
 				<p>Search for movies you want to watch.</p><!--Regular p tags here that go below each other-->
 				<p>Save them to your list</p><!--Because it is a p tag they will go below each other-->
+				<span>View Watch List:</span>
+				<a href="watchlist.html" class="myWatchlist">Watchlist</a><!--Somewhere in index.html, add a link that says "Go to my watchlist". Link navigates to watchlist.html-->
 			</div><!--Closing out the predefined header-->
 		</div><!--Closing out the first row, which is the title stuff. NOw we are more to the "meat" of the page-->
+		
 		<div class="row"><!--Starting the next row, this is just the searchbar-->
 			<div class="col-12 search"><!--Searchbar from bootstrap.-->
 
@@ -26,7 +29,7 @@
 					<div class="input-group input-group-lg"><!--Just another bootstrap specification for the form we want-->
 				      <input class="form-control search-bar" placeholder="Search for a movie..."><!--The placeholder includes what the text will say before we start searching-->
 				      <span class="input-group-btn"><!--Adds the button for the searchBar-->
-				        <button class="btn btn-primary" type="submit">Search</button><!--Specifications for the button-->
+						<button class="btn btn-primary" type="submit">Search</button><!--Specifications for the button-->
 				      </span><!--Closes the span class that was a specification for the button. Meaning the button is going to be horizontal to the searchbar-->
 				    </div><!--CLoses out the input div-->
 				</form><!--closes out the form-->
@@ -34,7 +37,7 @@
 		</div><!--Second row is not completely closed-->
 		<div class="row"><!--Starting the third row. THis is going to include our movies-->
 			<div class="col-12 results"><!--This has the results of the search-->
-				<div class="movies-container"><!--This class should contain all of the individual movie renderings-->
+				<div class="movies-container"><!--This class should contain all of the individual movie renderings. Part 2, need to attach a click listener to this DIV-->
 					<!-- MOVIES SHOW UP HERE! -->
 				</div><!--CLosing out the movie renderings-->
 
